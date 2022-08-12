@@ -113,6 +113,8 @@ post_info_full = ns.model(
                           description='Animated cover of post'),
         'aweme_id':
             fields.String(readonly=True, required=True, description='Id of post'),
+          'desc':
+            fields.String(readonly=True, required=True, description='desc of post'),
         'download_links':
             fields.List(fields.String,
                         readonly=True,
